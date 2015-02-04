@@ -34,30 +34,44 @@
             <h1>Web Quick Guide</h1>
             <p>This is good stuff I can refer back to.</p>
             <h2>Git</h2>
-            <ol>
-                <li>Open GitBash</li>
-                <li>Navigate to the directory you want as a local repo</li>
-                <li>Type: <span class="code">git init</span></li>
-                <li>Type this to make sure there has been a change (you should see red text): <span class="code">git status</span></li>
-                <li>Type: <span class="code">git add .</span></li>
-                <li>Type: <span class="code">git commit -m "Initialize repo”</span></li>
-                <li>Go to GitHub</li>
-                <li>Make a new repo there with the exact same name as your local directory.</li>
-                <li>Copy the URL for the repo:
-                <p><img src="images/GitHubURL.png"/></p></li>
-                <li>Go back to GitBash and type: <span class="code">git remote add origin url</span></li>
-                <li>Type: <span class="code">git push origin master</span></li>
-                <li>Enter your GitHub creds.</li>
-                <li>To back to GitHub and refresh the page to make sure all your files are in the repo.</li>
-                <li>To make a gh-pages live site:
-                    <li>In gitbash, in your master, type: <span class="code">git checkout -b gh-pages</span></li>
-                    <li>Type: <span class="code">git push origin gh-pages</span></li>
+            <h3>Make a new repo</h3>
+                <ol>
+                    <li>Open GitBash</li>
+                    <li>Navigate to the directory you want as a local repo</li>
+                    <li>Type: <span class="code">git init</span></li>
+                    <li>Type this to make sure there has been a change (you should see red text): <span class="code">git status</span></li>
+                    <li>Type: <span class="code">git add .</span></li>
+                    <li>Type: <span class="code">git commit -m "Initialize repo”</span></li>
+                    <li>Go to GitHub</li>
+                    <li>Make a new repo there with the exact same name as your local directory.</li>
+                    <li>Copy the URL for the repo:
+                    <p><img src="images/GitHubURL.png"/></p></li>
+                    <li>Go back to GitBash and type: <span class="code">git remote add origin url</span></li>
+                    <li>Type: <span class="code">git push origin master</span></li>
                     <li>Enter your GitHub creds.</li>
-                    <li>Go to GitHub to make sure the gh-pages is there and complete.</li>
-                    <li></li>
-                </li>
-                
-            </ol>
+                    <li>To back to GitHub and refresh the page to make sure all your files are in the repo.</li>
+                    <li>To make a gh-pages live site:
+                        <li>In gitbash, in your master, type: <span class="code">git checkout -b gh-pages</span></li>
+                        <li>Type: <span class="code">git push origin gh-pages</span></li>
+                        <li>Enter your GitHub creds.</li>
+                        <li>Go to GitHub to make sure the gh-pages is there and complete.</li>
+                        <li></li>
+                    </li>
+
+                </ol>
+            <h3>Update a repo</h3>
+        <p>After you make changes on your local files you need to push them to GitHub</p>
+                <ol>
+                    <li>Open GitBash</li>
+                    <li>Navigate to your local directory</li>
+                    <li>Type this to make sure there has been a change (you should see red text): <span class="code">git status</span></li>
+                    <li>Type: <span class="code">git add .</span></li>
+                    <li>Type: <span class="code">git commit -m "Initialize repo”</span></li>
+                    <li>Go to GitHub</li>
+                    <li>Type: <span class="code">git push origin master</span></li>
+                    <li>Enter your GitHub creds.</li>
+                    <li>To back to GitHub and refresh the page to make sure your changes made it to the repo.</li>
+                </ol>
            
         </article>
 		
