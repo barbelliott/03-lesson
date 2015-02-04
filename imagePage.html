@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Artwork Techniques</title>
+
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+<!--connect to modernizer to check to see if the user's browser can't support some of our script... looks like if not, modernizr might also have classes to add the functionality to the elements with HTML5 features the browser doesn't support-->
+<script type="text/javascript" src="modernizr-latest.js"></script>
+<!--connect to jquery-->
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<!--This tells the page not to fire off any scripts until the entire DOM has loaded. The "ready" event fires off when the dom is done loading-->
+
+<script type="text/javascript" src="javascript/imageCode.js"></script>
+    
+</head> 
+<body class="page" id="top"> 
+	<header>
+	<h1>Javascript</h1> 
+	</header>
+	<nav id="navigation" role="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="javascript-concepts.html">JavaScript Concepts</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="imagePage.html">Image Page</a></li>
+			<li><a href="forms.html">html5 Forms</a></li>  
+		</ul>
+		<h2>main navigation</h2> 
+	</nav>
+
+	<div id="primaryContent">
+        <article>	
+
+            <h2>Array of Images</h2>
+            
+            <p>Click the image and see what happens.</p>
+            <img id="placeholder" onclick="changeImage()" src="images/oil/thumbs/artwork_1.jpg"/>
+
+        </article>
+		
+	</div> <!-- closing primaryContent   -->
+	
+	<footer>
+		<p>
+		&copy; Copyright  by jason zeringue
+		</p>
+	</footer>
+</body>
+</html>

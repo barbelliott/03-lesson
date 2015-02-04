@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Artwork Techniques</title>
+
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+<!--connect to modernizer to check to see if the user's browser can't support some of our script... looks like if not, modernizr might also have classes to add the functionality to the elements with HTML5 features the browser doesn't support-->
+<script type="text/javascript" src="modernizr-latest.js"></script>
+<!--connect to jquery-->
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<!--This tells the page not to fire off any scripts until the entire DOM has loaded. The "ready" event fires off when the dom is done loading-->
+
+<script type="text/javascript" src="javascript/test.js"></script>
+    
+<script type="text/javascript">
+$(document).ready( function(){
+    //alert("hello universe"); **this just tests to make sure jqurey is working**
+    
+    if(!Modernizr.input.autofocus)
+    {
+        $("input[autofocus]").focus();//helps older browsers with the autofocus    
+    }
+    
+});    
+</script>    
+</head> 
+<body class="page" id="top"> 
+	<header>
+	<h1>Javascript</h1> 
+	</header>
+	<nav id="navigation" role="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="javascript-concepts.html">JavaScript Concepts</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="imagePage.html">Image Page</a></li>
+			<li><a href="forms.html">html5 Forms</a></li>   
+		</ul>
+		<h2>main navigation</h2> 
+	</nav>
+
+	<div id="primaryContent">
+        <article>	
+			<h2>JavaScript Concepts</h2>
+            
+            <h4>
+                <script type="text/javascript">
+                    document.write("Bad Example");
+                </script>
+            </h4>
+            <p id="replace">this is some text</p>
+            <img id="placeholder" onclick="changeImage()" src="images/oil/thumbs/artwork_1.jpg"/>
+			    
+        </article>
+		<aside>
+			<h2>Artist Links</h2> 
+			<p>Artist's work that has inspired me become a better illustrator / painter.<br>
+			I find the 16th and 17th centery facinating due to painting the wrong kind of subject could land you in the clutches of the early church's "Holy Inquisition", and be subject to the<a href="http://listverse.com/2013/09/24/10-horrifying-tortures-of-early-christians/"> tools</a> to help change your mind </p>
+			<ul>
+				<li><a href="http://www.metmuseum.org/toah/hd/crvg/hd_crvg.htm" target="_blank">Caravaggio (Michelangelo Merisi) (1571–1610)</a></li>
+				<li><a href="http://www.arthistoryarchive.com/arthistory/baroque/Artemisia-Gentileschi.html" target="_blank">Artemisia Gentileschi</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Frida_Kahlo" target="_blank">Frida Kahlo</a></li>
+				<li><a href="http://www.markryden.com/" target="_blank">Mark Ryden</a></li>
+				<li><a href="http://www.metmuseum.org/toah/hd/verm/hd_verm.htm" target="_blank">Johannes Vermeer</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Jean-Honor%C3%A9_Fragonard" target="_blank">Jean-Honor Fragonard</a></li>
+			</ul>
+		</aside>
+
+	</div> <!-- closing primaryContent   -->
+	
+	<footer>
+		<p>
+		&copy; Copyright  by jason zeringue
+		</p>
+	</footer>
+    <script type="text/javascript" src="javascript/test.js"></script><script>
+</body>
+</html>
